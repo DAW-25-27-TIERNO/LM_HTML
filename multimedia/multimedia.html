@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido multimedia</title>
+</head>
+
+<body>
+    <h3>Imágenes</h3>
+    <img src="../assets/images/palestine.webp" alt="Foto de la manifestación de Madrid" width="500" height="500">
+    <p>Esto es la leyende de la foto de arriba</p>
+
+    <figure>
+        <!-- En src puedo poner imágenes externas también -->
+        <img src="https://static.eldiario.es/clip/24831277-6e3f-4c6e-accd-182b636d4285_16-9-discover-aspect-ratio_default_0.webp"
+            alt="manifestación" width="600">
+        <figcaption>Foto de la manifestación de ...</figcaption>
+    </figure>
+
+    <h3>Audio</h3>
+    <!-- La manera más sencilla: -->
+    <audio src="../assets/audio/audio.flac" controls>
+        Lo siento, tu navegador no acepta audio.
+    </audio>
+    <br>
+
+    <!-- En general, envío varios ficheros para que se reproduzca el que pueda -->
+    <audio controls loop preload="none">
+        <source src="../assets/audio/dio.flac">
+        <source src="../assets/audio/audio.m4a">
+        <source src="../assets/audio/audio.ogg">
+        Lo siento, tu navegador no acepta audio.
+    </audio>
+    <br>
+
+    <!-- Esta forma la intentamos evitar: -->
+    <video src="../assets/video/video.avi" controls>
+        No puedo reproducirlo :(
+    </video>
+    <br>
+
+    <!-- De la manera pro: -->
+    <video autoplay loop width="100%">
+        <source src="../assets/video/video.avi">
+        <source src="../assets/video/video.mov">
+        <source src="../assets/video/video.ogg">
+        No puedo reproducirlo :(
+    </video>
+    <br>
+
+
+    <h3>Imágenes de varios tamaños</h3>
+    <figure>
+        <picture>
+            <source srcset="../assets/images/image600x400.png" media="(min-width: 1200px)">
+            <source srcset="../assets/images/image300x200.png" media="(min-width: 800px)">
+            <source srcset="../assets/images/image150x100.png" media="(min-width: 10px)">
+            <img src="../assets/images/image600x400.png" alt="imágenes de tamaños">
+        </picture>
+        <figcaption>Esta imagen cambia dependiendo del ancho de la pantalla</figcaption>
+    </figure>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+</html>
