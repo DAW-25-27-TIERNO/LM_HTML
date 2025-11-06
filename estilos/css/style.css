@@ -1,0 +1,21 @@
+/* Esto es un comentario */
+
+/******************** TÍTULOS ******************/
+
+h3 {
+    background-color: yellowgreen;
+    padding: 10px;
+    /* Esto es el margen interior */
+}
+
+
+/****************** PÁRRAFOS ********************/
+
+/* Etiqueta de párrafo tenga color, color de fondo, padding y margin.*/
+
+p {
+    color: bisque;
+    background-color: brown;
+    padding: 4px;
+    margin: 50px;
+}
