@@ -19,3 +19,43 @@ p {
     padding: 4px;
     margin: 50px;
 }
+
+div {
+    /*padding-top: 20px;
+    padding-right: 40%;
+    padding-bottom: 10px;
+    padding-left: 40%;*/
+    padding: 20px 40% 10px 40%;
+}
+
+.rosita {
+    background-color: DeepPink;
+}
+
+.verde {
+    /*background-color: rgba(0, 255, 0, 0.674);*/
+    /*background-color: #15A96075;*/
+    background-color: hsla(130, 80%, 50%, 0.726);
+    margin-top: -20px;
+}
+
+.gradiente {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*background-image: linear-gradient(to  right,
+            red 10%,
+            green 15% 80%,
+            red 82% 90%,
+            blue);*/
+    /*background-image: radial-gradient(
+                #14d4ff,
+                #008d2c
+            );*/
+    background-image: repeating-linear-gradient(to right,
+            rgba(255, 0, 0, 0.5) 0 10px,
+            rgba(0, 128, 0, 0.5) 10px 20px);
+}
+
+.imagen {
+    background-image: url("../../assets/images/palestine.webp");
+}

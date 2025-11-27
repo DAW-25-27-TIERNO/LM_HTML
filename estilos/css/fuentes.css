@@ -1,0 +1,155 @@
+.gradient {
+    width: 100%;
+    padding: 50px 10px;
+    /* los gradientes son imágenes en css: */
+    /*background-image: linear-gradient(to   top,
+            blue 0% 30%,
+            red,
+            rgb(55, 211, 38),
+            rgb(252, 220, 12) 60% 100%);*/
+    /*background-image: radial-gradient(blue 0% 30%,
+            red,
+            rgb(55, 211, 38),
+            rgb(252, 220, 12) 60% 100%);*/
+    background-image: conic-gradient(blue 0% 30%,
+            red,
+            rgb(55, 211, 38),
+            rgb(252, 220, 12) 60% 100%);
+
+}
+
+/************************ FUENTES   ****************/
+/* Importar un fichero con un tipo de letra */
+@font-face {
+    font-family: "Smooch Sans";
+    src: url("./SmoochSans-VariableFont_wght.ttf");
+}
+
+/* Importo desde el servidor de Google Fonts una fuente */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+US+Trad+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-family: "Times", serif;
+}
+
+h2 {
+    font-family: "Smooch Sans", sans-serif;
+}
+
+h3 {
+    font-family: "Playwrite US Trad Guides", cursive;
+}
+
+h4 {
+    font-family: "Bungee Spice", sans-serif;
+}
+
+/************ SELECTORES ***************/
+/* 1. selector de etiqueta: */
+article {
+    padding: 20px;
+    margin: 5px;
+    background-color: bisque;
+}
+
+p {
+    padding: 50px;
+}
+
+/* 2. selector por clase */
+.pazul {
+    background-color: rgba(11, 7, 240, 0.854);
+    color: #ffffff;
+    /* color de la letra */
+}
+
+/* 3. seleccionar por id */
+#mifavorito {
+    background-color: pink;
+}
+
+.muchopadding {
+    padding: 100px;
+}
+
+.rojo {
+    background-color: red;
+
+}
+
+.letraverde {
+    color: green;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* 4. selector por atributo */
+[type] {
+    /*TODOS las etiquetas de HTML que tengan 
+    el atributo type */
+    width: 100%;
+}
+
+[type="tel"] {
+    background-color: aquamarine;
+}
+
+[href$="mp3"] {
+    color: blue;
+    font-size: 0.2rem;
+}
+
+.div-btn {
+    margin: 30px 10px;
+}
+
+.btn-inicio {
+    background-color: rgb(70, 185, 70);
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.btn-inicio:hover {
+    background-color: rgb(35, 90, 35);
+}
+
+.btn-inicio:active {
+    background-color: rgb(223, 221, 69);
+}
+
+.btn-inicio:focus {
+    background-color: rgb(223, 92, 69);
+}
+
+.list li:first-child{
+    font-weight: bold;
+}
+.list li:last-child{
+    font-style: italic;
+}
+.list li:nth-child(odd){
+    color: blue;
+}
+/* los dos úlitmos */
+.list li:nth-last-child(-n+2){
+    font-size: 0.5rem;
+}
+.first-letter::first-letter{
+    font-size: 2rem;
+    color:blue;
+}
+.first-line::first-line{
+    font-weight: bold;
+}
+.content-before::after{
+    content: "<-";
+}
+.first-letter::selection{
+    background-color: aquamarine;
+}

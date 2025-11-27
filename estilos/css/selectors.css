@@ -1,0 +1,18 @@
+/* Se aplica a todos los descendientes */
+.sec p {
+    background-color: aquamarine;
+}
+
+/* Solo descendientes directos */
+.sec>p{
+    font-size: 1.5rem;
+}
+/*Hermanos directos*/
+.sec+p{
+    color: #f10e0e;
+}
+
+/*Todos los hermanos*/
+.sec~p{
+    font-style: italic;
+}
