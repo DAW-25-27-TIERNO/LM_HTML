@@ -1,0 +1,10 @@
+header{
+    background-image: linear-gradient(to right, rgb(126, 126, 243), rgb(227, 113, 250), rgb(217, 115, 235));
+}
+h1{
+    text-align: center;
+}
+
+li{
+    display: inline;
+}

@@ -4,15 +4,56 @@
 }
 
 /* Solo descendientes directos */
-.sec>p{
+.sec>p {
     font-size: 1.5rem;
 }
+
 /*Hermanos directos*/
-.sec+p{
+.sec+p {
     color: #f10e0e;
 }
 
 /*Todos los hermanos*/
-.sec~p{
+.sec~p {
     font-style: italic;
+}
+
+.fuera p {
+    background-color: yellow;
+}
+
+.fuera>p {
+    font-weight: bold;
+}
+
+/* Quiero seleccionar todos los divs 
+hermanos de "dentro" */
+.dentro~div {
+    color: red;
+}
+
+p {
+    background-color: bisque !important;
+}
+
+html {
+    color: chartreuse
+}
+
+.negro {
+    background-color: black;
+}
+
+.azul {
+    background-color: aqua;
+    font-size: 2rem;
+}
+
+#parr1 {
+    background-color: blueviolet;
+}
+
+.negrita {
+    font-weight: bold;
+    background-color: grey;
 }

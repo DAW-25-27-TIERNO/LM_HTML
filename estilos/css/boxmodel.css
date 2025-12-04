@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div {
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.borde-solido {
+    /*border-width: 3px;
+    border-style: solid;
+    border-color: rgb(2, 160, 160);*/
+    border: 3px solid rgb(2, 160, 160);
+}
+
+div.borde-punteado {
+    border: 5px dotted green;
+    /* dashed groove ridge... */
+}
+
+div.ancho-500 {
+    width: 500px;
+    height: 50px;
+    border: 3px solid red;
+}
+div.margin-50{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+div.margin-60{
+    margin-top:60px;
+}
+div.horizontal{
+    /*width: 500px; Esta propiedad es inútil por el inline*/
+    display: inline;
+}
+div.blue{
+    background-color: rgba(0, 0, 255, 0.297);
+}
+.form-name{
+    display: block;
+}
+div.horizontal-bloque{
+    width: 200px;
+    display: inline-block;
+}
