@@ -1,0 +1,112 @@
+/* NORMAS DEL EXAMEN:
+- Durante la realización de este examen no puedes utilizar internet. Sí puedes utilizar apuntes y proyectos propios.
+- Respeta la nomenclatura solicitada y el funcionamiento. De no cumplirse este requisito, no se corregirá dicho ejercicio.
+- Si se detecta cualquier copia o medio no lícito, el examen será calificado con un 0.
+*/
+
+/*
+INSTRUCCIONES:
+La finalidad del examen es que imites el resultado final de la página que se muestra en la pantalla. Para ello, debes completar este fichero CSS con las reglas que necesites.
+
+Mantén el orden del CSS. Cada regla debe ir en el apartado correcto. De no ser así, se restará nota en ese ítem.
+
+No se detallan márgenes, paddings, tamaños de letra, etc. Ponlos tú según lo que veas en la imagen.
+
+Entrega únicamente este fichero CSS.
+*/
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************** BODY (0,5 puntos) ***************/
+/*
+- Fuente: Georgia, serif.
+- Fondo: #f5f0f0.
+- Color de texto: #1a0a0a.
+- Altura de línea: 1.7.
+*/
+
+
+/*************** CABECERA (1,5 puntos) ***************/
+/*
+- La cabecera siempre se queda arriba al hacer scroll.
+- cine-top: fondo #0d0d0d, texto blanco.
+- "CineClub" (h1): color #c8102e (rojo cine), tamaño doble del tamaño base.
+- cine-subtitle: blanco con algo de transparencia.
+- tickets-btn: fondo #c8102e, texto blanco, bordes redondeados, negrita.
+- Al pasar el ratón por tickets-btn: fondo rgba(255,255,255,0.15).
+*/
+
+
+/*************** NAVEGACIÓN (1 punto) ***************/
+/*
+- Fondo: #e8e0e0.
+- Links: color #1a0a0a, negrita.
+- Al pasar el ratón: color #c8102e y borde inferior de 2px con ese color.
+*/
+
+
+/*************** CONTENEDOR PRINCIPAL (0,75 puntos) ***************/
+/*
+- cine-main ocupa 2/3, cine-aside ocupa 1/3.
+- Ancho máximo 1300px, centrado.
+- Separación: 2rem.
+- Margen superior e inferior: 3rem.
+*/
+
+
+/*************** ÚLTIMAS RESEÑAS (2 puntos) ***************/
+/*
+- Fondo blanco, bordes redondeados.
+- Sombra hacia abajo y difuminada: rgba(26, 10, 10, 0.08).
+- Cada review-card: fondo #fff5f5, borde izquierdo de 4px color #c8102e, bordes redondeados.
+- Al pasar el ratón sobre review-card: sombra rgba(200, 16, 46, 0.2).
+- review-meta: usa flexbox para mostrar el tag a la izquierda y la puntuación a la derecha.
+- review-tag: fondo #c8102e, texto blanco, bordes muy redondeados, tamaño 0.8rem.
+- review-score: color #7f1d1d, tamaño 0.85rem.
+- review-author: color #c8102e, cursiva.
+- El h3 de cada review-card: al pasar el ratón debe cambiar a color #c8102e.
+*/
+
+
+/*************** SESIONES ESPECIALES (1,25 puntos) ***************/
+/*
+- Fondo blanco, bordes redondeados, misma sombra.
+- Cada screening-card: fondo con gradiente de izquierda a derecha de #0d0d0d a #c8102e,
+  texto blanco, bordes redondeados.
+- El último screening-card (usa pseudoclase): gradiente de #1f1f1f a #4a1a1a.
+- screening-info: tamaño 0.85rem, blanco con algo de transparencia.
+*/
+
+
+/*************** ASIDE (1,25 puntos) ***************/
+/*
+- watchlist-box e info-box: fondo blanco, bordes redondeados, misma sombra.
+- h3 del aside: color #1a0a0a, tamaño 1.2rem.
+- watch-list: sin viñetas. Cada li con borde inferior excepto el último (usa :last-child).
+  Los enlaces: color #1a0a0a, sin subrayado. Al pasar el ratón: color #c8102e.
+- El texto de los párrafos del info-box: color #7f1d1d.
+*/
+
+
+/*************** PIE (1 punto) ***************/
+/*
+- Fondo #0d0d0d, texto blanco.
+- h4: color #c8102e.
+- Links: color #a0a0a0; al pasar el ratón, color #c8102e.
+- footer-social: enlaces en fila con gap.
+- Línea que separa footer-bottom: color #2d2d2d.
+*/
+
+
+/*************** MEDIA QUERY (0,75 puntos) ***************/
+/* ANCHO MÁXIMO DE 900px:
+- La cabecera deja de ser sticky.
+- cine-top pasa a columna y se centra.
+- El cine-container pasa a una sola columna.
+- El pie pasa a una sola columna.
+*/

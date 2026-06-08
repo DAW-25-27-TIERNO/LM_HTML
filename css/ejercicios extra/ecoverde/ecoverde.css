@@ -1,0 +1,112 @@
+/* NORMAS DEL EXAMEN:
+- Durante la realización de este examen no puedes utilizar internet. Sí puedes utilizar apuntes y proyectos propios.
+- Respeta la nomenclatura solicitada y el funcionamiento. De no cumplirse este requisito, no se corregirá dicho ejercicio.
+- Si se detecta cualquier copia o medio no lícito, el examen será calificado con un 0.
+*/
+
+/*
+INSTRUCCIONES:
+La finalidad del examen es que imites el resultado final de la página que se muestra en la pantalla. Para ello, debes completar este fichero CSS con las reglas que necesites.
+
+Mantén el orden del CSS. Cada regla debe ir en el apartado correcto. De no ser así, se restará nota en ese ítem.
+
+No se detallan márgenes, paddings, tamaños de letra, etc. Ponlos tú según lo que veas en la imagen.
+
+Entrega únicamente este fichero CSS.
+*/
+
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*************** BODY (0,5 puntos) ***************/
+/*
+- Fuente: 'Trebuchet MS', sans-serif.
+- Fondo: #f0f7f2.
+- Color de texto: #1a2e1a.
+- Altura de línea: 1.7.
+*/
+
+
+/*************** CABECERA (1,5 puntos) ***************/
+/*
+- La cabecera siempre se queda arriba al hacer scroll.
+- eco-top: fondo #1a2e1a, texto blanco.
+- "EcoVerde" (h1): color #2d8a4e (verde bosque), tamaño doble del tamaño base.
+- eco-subtitle: blanco con algo de transparencia.
+- join-btn: fondo #2d8a4e, texto blanco, bordes redondeados, negrita.
+- Al pasar el ratón por join-btn: fondo rgba(255,255,255,0.15).
+*/
+
+
+/*************** NAVEGACIÓN (1 punto) ***************/
+/*
+- Fondo: #d4edda.
+- Links: color #1a2e1a, negrita.
+- Al pasar el ratón: color #2d8a4e y borde inferior de 2px con ese color.
+*/
+
+
+/*************** CONTENEDOR PRINCIPAL (0,75 puntos) ***************/
+/*
+- eco-main ocupa 2/3, eco-aside ocupa 1/3.
+- Ancho máximo 1300px, centrado.
+- Separación: 2rem.
+- Margen superior e inferior: 3rem.
+*/
+
+
+/*************** ARTÍCULOS RECIENTES (2 puntos) ***************/
+/*
+- Fondo blanco, bordes redondeados.
+- Sombra hacia abajo y difuminada: rgba(26, 46, 26, 0.08).
+- Cada article-card: fondo #f0fff4, borde izquierdo de 4px color #2d8a4e, bordes redondeados.
+- Al pasar el ratón sobre article-card: sombra rgba(45, 138, 78, 0.2).
+- article-meta: usa flexbox para mostrar el tag a la izquierda y la fecha a la derecha.
+- article-tag: fondo #2d8a4e, texto blanco, bordes muy redondeados, tamaño 0.8rem.
+- article-date: color #4a7c59, tamaño 0.85rem.
+- article-author: color #2d8a4e, cursiva.
+- El h3 de cada article-card: al pasar el ratón debe cambiar a color #2d8a4e.
+*/
+
+
+/*************** PROYECTOS ACTIVOS (1,25 puntos) ***************/
+/*
+- Fondo blanco, bordes redondeados, misma sombra.
+- Cada project-card: fondo con gradiente de izquierda a derecha de #1a2e1a a #2d8a4e,
+  texto blanco, bordes redondeados.
+- El último project-card (usa pseudoclase): gradiente de #1e3a2e a #2e5940.
+- project-status: tamaño 0.85rem, blanco con algo de transparencia.
+*/
+
+
+/*************** ASIDE (1,25 puntos) ***************/
+/*
+- topics-box y about-box: fondo blanco, bordes redondeados, misma sombra.
+- h3 del aside: color #1a2e1a, tamaño 1.2rem.
+- topics-list: sin viñetas. Cada li con borde inferior excepto el último (usa :last-child).
+  Los enlaces: color #1a2e1a, sin subrayado. Al pasar el ratón: color #2d8a4e.
+- El texto de los párrafos del about-box: color #4a7c59.
+*/
+
+
+/*************** PIE (1 punto) ***************/
+/*
+- Fondo #1a2e1a, texto blanco.
+- h4: color #2d8a4e.
+- Links: color #a0c4a0; al pasar el ratón, color #2d8a4e.
+- footer-social: enlaces en fila con gap.
+- Línea que separa footer-bottom: color #2d4a2d.
+*/
+
+
+/*************** MEDIA QUERY (0,75 puntos) ***************/
+/* ANCHO MÁXIMO DE 900px:
+- La cabecera deja de ser sticky.
+- eco-top pasa a columna y se centra.
+- El eco-container pasa a una sola columna.
+- El pie pasa a una sola columna.
+*/
